@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIMATEC SERVIÇOS | 20 Anos de Experiência</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --navy: #0A1D37;
+            --royal: #0056B3;
+            --orange: #FF8C00;
+            --white: #FFFFFF;
+            --bg-light: #F8FAFC;
+        }
+
+        body { font-family: 'Inter', sans-serif; color: var(--navy); }
+        
+        /* BOTÃO FLUTUANTE */
+        .whatsapp-float {
+            position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px;
+            background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center;
+            font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 1000;
+            display: flex; align-items: center; justify-content: center; transition: 0.3s;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); color: white; }
+
+        header.main-header { padding: 15px 0; border-bottom: 6px solid var(--navy); background: #fff; }
+        .logo-img { height: 80px; }
+        .brand-info { border-left: 4px solid var(--orange); padding-left: 15px; }
+
+        .hero-banner {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(10,29,55,0.92) 20%, rgba(0,86,179,0.8) 100%), 
+                        url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070') center/cover;
+            color: var(--white);
+        }
+
+        /* TABELA DE PREÇOS E GARANTIAS */
+        .table-custom {
+            background: white; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .table-custom thead { background: var(--navy); color: white; font-family: 'Oswald'; }
+        .price-text { color: var(--orange); font-weight: 700; font-size: 1.1rem; }
+        .warranty-badge { background: #e1fcef; color: #14a44d; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.9rem; }
+
+        .img-servico {
+            width: 100%; height: 350px; object-fit: cover; border-radius: 12px;
+            border: 4px solid #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: 0.4s;
+        }
+        .img-servico:hover { transform: translateY(-5px); border-color: var(--orange); }
+
+        .btn-mega {
+            background: var(--orange); color: var(--white); padding: 18px 35px;
+            font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase;
+            border: none; transition: 0.4s; text-decoration: none; display: inline-block; border-radius: 4px;
+        }
+        .btn-mega:hover { background: var(--royal); color: white; }
+
+        .about-text { font-size: 1.1rem; color: #4A5568; line-height: 1.8; }
+        footer { background: #050a12; color: #718096; padding: 40px 0; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/5586988252429?text=Olá!%20Vim%20pelo%20site%20da%20Climatec%20e%20gostaria%20de%20um%20orçamento." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header class="main-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3">
+                <img src="https://national-yellow-yuahbyqucb.edgeone.app/Captura%20de%20tela%202026-02-04%20185534.png" alt="Logo Climatec" class="logo-img">
+                <div class="brand-info">
+                    <h1 style="font-family: 'Oswald'; margin:0;">Climatec</h1>
+                    <span class="fw-bold text-primary">SERVIÇOS TÉCNICOS</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner text-center">
+        <div class="container">
+            <h2 style="font-family: 'Oswald'; font-size: 3rem;">EXPERIÊNCIA QUE <br><span style="color: var(--orange);">FAZ A DIFERENÇA.</span></h2>
+            <p class="fs-4 mt-3">Sua refrigeração e máquinas em boas mãos há mais de 20 anos.</p>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7">
+                    <h2 style="font-family: 'Oswald'; color: var(--navy);">QUEM SOMOS</h2>
+                    <p class="about-text">A <strong>Climatec Serviços</strong> atua há mais de 20 anos oferecendo soluções em <strong>máquina de lavar, ar-condicionado, geladeira e freezer</strong>. Atendemos toda Teresina com rapidez, peças de qualidade e a confiança que só quem tem décadas de estrada pode oferecer.</p>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="p-4 bg-light border-start border-4 border-warning shadow-sm">
+                        <h4 class="mb-0 fw-bold">Atendimento em toda Teresina-PI</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h3 class="text-center mb-4" style="font-family: 'Oswald';">TABELA DE SERVIÇOS</h3>
+                    <div class="table-responsive">
+                        <table class="table table-custom text-center align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Equipamento</th>
+                                    <th>Garantia</th>
+                                    <th>Preço Estimado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ar-Condicionado</strong></td>
+                                    <td><span class="warranty-badge">90 dias a 1 ano</span></td>
+                                    <td class="price-text">Sob Consulta</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Máquina de Lavar</strong></td>
+                                    <td><span class="warranty-badge">90 dias</span></td>
+                                    <td class="price-text">Sob Consulta</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Geladeira</strong></td>
+                                    <td><span class="warranty-badge">90 dias</span></td>
+                                    <td class="price-text">Sob Consulta</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Freezer</strong></td>
+                                    <td><span class="warranty-badge">90 dias</span></td>
+                                    <td class="price-text">Sob Consulta</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-center text-muted small mt-2">*O valor final depende da avaliação técnica e peças necessárias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 style="font-family: 'Oswald'; margin-bottom: 40px;">SERVIÇOS REALIZADOS</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img src="https://instagram.fthe9-1.fna.fbcdn.net/v/t51.82787-15/572602142_18084032531085404_6484853926853341788_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=104&ig_cache_key=MzM1OTA3NzA2NDY4MTUxNTA2Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=IpBs2tmascoQ7kNvwGqEQV5&_nc_oc=Adk1PaxkRNaoFJYfQrGD7VIxEVbFvG6dNOOCXuQFAcpRAE5ch5Wk4lU-QFHKWrdIovU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fthe9-1.fna&_nc_gid=glESAlyOykmpdTXC-90zbA&oh=00_AftbdLURxC3nppkZZm44aEHx0oxN7jJ-pRbnugFOT555lw&oe=698ADDE8" class="img-servico" alt="Serviço Climatec 1">
+                </div>
+                <div class="col-md-6">
+                    <img src="https://instagram.fthe9-1.fna.fbcdn.net/v/t51.82787-15/566194679_18043763411455440_6486445240366297313_n.jpg?stp=dst-jpg_e35_p480x480_tt6&_nc_cat=101&ig_cache_key=MzM5MDM5NTM3MDI4NTY2MDYwOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=qFIxtkuBZ1YQ7kNvwGZ-gjh&_nc_oc=AdmbKxCXPWssKsDTTYcYtnsaCSG82J5BNPS1L5e6ul8_1Y0arrfqmihzkRLRLfsiYrc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fthe9-1.fna&_nc_gid=glESAlyOykmpdTXC-90zbA&oh=00_AfvQZ4lFLTy8wHgq6Xf23-KZAt4zog_K4mDVamzt4bNBLw&oe=698AF1D3" class="img-servico" alt="Serviço Climatec 2">
+                </div>
+            </div>
+            <div class="mt-5">
+                <a href="https://www.instagram.com/stories/highlights/18017472188194784/" target="_blank" class="btn btn-outline-primary fw-bold">
+                    <i class="fab fa-instagram me-2"></i> VER MAIS NO INSTAGRAM
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-center" style="background: var(--navy); color: white;">
+        <div class="container">
+            <h2 style="font-family: 'Oswald';">PRECISA DE UM TÉCNICO AGORA?</h2>
+            <p class="fs-5 mb-4 opacity-75">Orçamento rápido pelo WhatsApp.</p>
+            <a href="https://wa.me/5586988252429?text=Vim%20pelo%20site%20e%20preciso%20de%20um%20orçamento." target="_blank" class="btn-mega">
+                <i class="fab fa-whatsapp me-2"></i> FALAR COM CLIMATEC
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">© 2026 CLIMATEC SERVIÇOS | (86) 98825-2429</p>
+            <p class="small">Climatec Serviços — cuidado que você pode confiar.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
